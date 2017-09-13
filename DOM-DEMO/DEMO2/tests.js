@@ -1,4 +1,4 @@
-describe('测试节点关系', function () {
+describe('测试节点操作', function () {
 
     var ul = document.getElementById('list')
 
