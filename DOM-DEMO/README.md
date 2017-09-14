@@ -3,6 +3,8 @@
 
 ## start
 ```
+进入DEMOx文件夹（x为数字编号）
 npm install
-npm run test
+打开index.html查看测试用例
+测试代码在tests.js中
 ```
