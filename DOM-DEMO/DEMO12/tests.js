@@ -13,6 +13,8 @@ describe('测试节点内容', function () {
         ul.appendChild(li)
 
         text.splitText(3)
+        
+        should(ul.children.length).exactly(4, 'ul元素中的li子节点长度应为4')
     })
 
 })
