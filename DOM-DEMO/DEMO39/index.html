@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mocha</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mocha.css" />
+</head>
+
+<body>
+
+  <div id="mocha"></div>
+
+  <ul id='list' data-seq='1'>
+    <li data-seq='2'>
+      <ul data-seq='3'>
+        <li data-seq='4'>content1-1</li>
+        <li data-seq='5'>content1-2</li>
+      </ul>
+    </li>
+    <li data-seq='6'>
+      content2
+    </li>
+    <li data-seq='7'>
+      content3
+    </li>
+  </ul>
+
+  <script src="mocha.js"></script>
+  <script src=".\node_modules\should\should.js"></script>
+  <script>
+    mocha.setup('bdd');
+  </script>
+  <script src="tests.js"></script>
+  <script>
+    mocha.run();
+  </script>
+</body>
+
+</html>
